@@ -1,0 +1,265 @@
+{
+	"info": {
+		"_postman_id": "bb9c8437-3966-4f3d-8e62-4c3133fb4899",
+		"name": "ArvanCloud S3 Upload",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26688280"
+	},
+	"item": [
+		{
+			"name": "attachment",
+			"item": [
+				{
+					"name": "Upload",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": [
+										"/C:/Users/ACER/Downloads/man.png",
+										"/C:/Users/ACER/Downloads/Unt46tledblog.png"
+									]
+								},
+								{
+									"key": "files",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								},
+								{
+									"key": "files",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/v1/attachments/upload",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"v1",
+								"attachments",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Public Upload",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/ACER/Downloads/settings (1).gradle"
+								},
+								{
+									"key": "files",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								},
+								{
+									"key": "files",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/v1/attachments/public-upload",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"v1",
+								"attachments",
+								"public-upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Public Upload Files",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "files",
+									"type": "file",
+									"src": [
+										"/C:/Users/ACER/Downloads/How to restart KaraAks Engine.pdf",
+										"/C:/Users/ACER/Downloads/FileUtil.java"
+									]
+								},
+								{
+									"key": "files",
+									"type": "file",
+									"src": "/C:/Users/ACER/Downloads/LiferayOSGiExtPlugin.java"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/v1/attachments/public-upload-all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"v1",
+								"attachments",
+								"public-upload-all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Info",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/v1/attachments/661e2a4a6aa15e0aa63c9594",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"v1",
+								"attachments",
+								"661e2a4a6aa15e0aa63c9594"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Download",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/v1/attachments/download/661e2a8b6aa15e0aa63c9596",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"v1",
+								"attachments",
+								"download",
+								"661e2a8b6aa15e0aa63c9596"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Attachments by page",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/v1/attachments?page=2&size=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"v1",
+								"attachments"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								},
+								{
+									"key": "size",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Attachment",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/v1/attachments/661e2a4a6aa15e0aa63c9594",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"v1",
+								"attachments",
+								"661e2a4a6aa15e0aa63c9594"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
