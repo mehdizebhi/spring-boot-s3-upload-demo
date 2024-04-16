@@ -72,7 +72,7 @@ The API exposes the following endpoints:
 
 For easy testing of the API endpoints, import the provided Postman collection into your Postman application:
 
-[Download Postman Collection](https://github.com/mehdizebhi/spring-boot-s3-upload-demo/blob/main/ArvanCloud%20S3%20Upload.postman_collection.json)
+[Download Postman Collection](https://github.com/mehdizebhi/spring-boot-s3-upload-demo/blob/main/spring_boot_s3_upload_demo.postman_collection.json)
 
 ## Contributing
 
