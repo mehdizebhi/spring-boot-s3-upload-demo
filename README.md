@@ -1,7 +1,7 @@
 
 # Spring Boot Upload/Download API with S3 and MongoDB
 
-This is a simple Spring Boot application that provides RESTful endpoints to upload, download, and delete files from an AWS S3 bucket. The metadata related to the files is stored in a MongoDB database.
+This is a simple Spring Boot application that provides RESTful endpoints to upload, download, and delete files from an AWS S3 bucket (ArvanCloud S3 bucket). The metadata related to the files is stored in a MongoDB database.
 
 ## Prerequisites
 
